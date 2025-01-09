@@ -1,7 +1,7 @@
 /* font-family: "Raleway", serif;
 font-family: "Roboto", serif; */
 body {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
@@ -16,7 +16,7 @@ a {
 }
 
 .header-logo {
-  font-family: var(--second-family);
+  font-family: "Raleway", serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 117%;
@@ -40,6 +40,15 @@ a {
   color: #2e2f42;
 }
 
+.nav-list .list-item .list-link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
 .nav-list .list-item .list-link:hover,
 .nav-list .list-item .list-link:focus {
   font-family: var(--font-family);
@@ -50,13 +59,14 @@ a {
   color: #404bbf;
 }
 
-.header-address .address-list .list-item {
+.header-address .address-list .list-item .list-link {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+  font-style: normal;
 }
 
 .header-address .address-list .list-item .list-link:hover,
@@ -71,10 +81,9 @@ a {
 
 .section-one {
   background-color: #2e2f42;
-  text-align: center;
 }
 
-.section-one .s1-h1 {
+.section-one .s-one-h-one {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 56px;
@@ -84,8 +93,7 @@ a {
   color: #fff;
 }
 
-[type="button"] {
-  border-radius: 4px;
+.button-one {
   padding: 16px 32px;
   width: 180px;
   height: 60px;
@@ -99,16 +107,12 @@ a {
   color: #fff;
 }
 
-button[type="button"]:hover,
-button[type="button"]:focus-visible {
+.button-one:hover,
+.button-one:focus-visible {
   background-color: #404bbf;
 }
 
-.section-two {
-  text-align: center;
-}
-
-.s2-list .list-item .item-h3 {
+.s-two-list .list-item .item-h-three {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
@@ -117,7 +121,7 @@ button[type="button"]:focus-visible {
   color: #2e2f42;
 }
 
-.s2-list .list-item .item-p {
+.s-two-list .list-item .item-p {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -127,11 +131,10 @@ button[type="button"]:focus-visible {
 }
 
 .section-three {
-  background-color: #f4f4fd;
-  text-align: center;
+  background-color: #ffffff;
 }
 
-.s3-h2 {
+.s-three-h-two {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
@@ -139,33 +142,28 @@ button[type="button"]:focus-visible {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  text-transform: capitalize;
 }
 
-.s3-list .list-item .item-h3 {
+.s-three-list .list-item .item-h-three {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
 }
 
-.s3-list .list-item .item-p {
+.s-three-list .list-item .item-p {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #434455;
 }
 
-.section-four {
-  text-align: center;
-}
-
-.s4-h2 {
+.s-four-h-two {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
@@ -173,9 +171,10 @@ button[type="button"]:focus-visible {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  text-transform: capitalize;
 }
 
-.s4-list .list-item .item-h3 {
+.s-four-list .list-item .item-h-three {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
@@ -184,16 +183,7 @@ button[type="button"]:focus-visible {
   color: #2e2f42;
 }
 
-.s4-list .list-item .item-p {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 120%;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.s4-list .list-item .item {
+.s-four-list .list-item .item-p {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -223,7 +213,7 @@ button[type="button"]:focus-visible {
 }
 
 .footer-p {
-  font-family: var(--font-family);
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
